@@ -1,0 +1,8 @@
+libgbm stub
+-----------
+
+The libgbm-stub package contains GBM stub for linking at build time.
+
+Have fun,
+
+Nicolas Caramelli
