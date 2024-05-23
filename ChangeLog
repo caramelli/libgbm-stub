@@ -1,3 +1,15 @@
+commit b1df8590e6ca81a46c158d120f4ec3e6fc40494a
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Thu May 23 06:36:16 2024 +0200
+
+    Add plane getter functions
+
+commit 5a13c7d7f3bee1c3db7e7a4e896835642749c392
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Wed May 22 12:56:47 2024 +0200
+
+    Update ChangeLog
+
 commit a60eefaeb701bcb0833aa9ad2e375af6cc9f4078
 Author: Nicolas Caramelli <caramelli.devel@gmail.com>
 Date:   Wed May 22 12:50:08 2024 +0200
