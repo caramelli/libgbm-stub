@@ -79,6 +79,12 @@ enum gbm_bo_format {
 /* color index */
 #define GBM_FORMAT_C8		__gbm_fourcc_code('C', '8', ' ', ' ') /* [7:0] C */
 
+/* 8 bpp Red */
+#define GBM_FORMAT_R8		__gbm_fourcc_code('R', '8', ' ', ' ') /* [7:0] R */
+
+/* 16 bpp RG */
+#define GBM_FORMAT_GR88		__gbm_fourcc_code('G', 'R', '8', '8') /* [15:0] G:R 8:8 little endian */
+
 /* 8 bpp RGB */
 #define GBM_FORMAT_RGB332	__gbm_fourcc_code('R', 'G', 'B', '8') /* [7:0] R:G:B 3:3:2 */
 #define GBM_FORMAT_BGR233	__gbm_fourcc_code('B', 'G', 'R', '8') /* [7:0] B:G:R 2:3:3 */
@@ -292,7 +298,13 @@ uint32_t
 gbm_bo_get_stride(struct gbm_bo *bo);
 
 uint32_t
+gbm_bo_get_stride_for_plane(struct gbm_bo *bo, int plane);
+
+uint32_t
 gbm_bo_get_format(struct gbm_bo *bo);
+
+uint32_t
+gbm_bo_get_offset(struct gbm_bo *bo, int plane);
 
 struct gbm_device *
 gbm_bo_get_device(struct gbm_bo *bo);
@@ -302,6 +314,15 @@ gbm_bo_get_handle(struct gbm_bo *bo);
 
 int
 gbm_bo_get_fd(struct gbm_bo *bo);
+
+int
+gbm_bo_get_plane_count(struct gbm_bo *bo);
+
+union gbm_bo_handle
+gbm_bo_get_handle_for_plane(struct gbm_bo *bo, int plane);
+
+int
+gbm_bo_get_fd_for_plane(struct gbm_bo *bo, int plane);
 
 int
 gbm_bo_write(struct gbm_bo *bo, const void *buf, size_t count);

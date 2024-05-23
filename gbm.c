@@ -32,10 +32,15 @@ void gbm_bo_unmap() {}
 void gbm_bo_get_width() {}
 void gbm_bo_get_height() {}
 void gbm_bo_get_stride() {}
+void gbm_bo_get_stride_for_plane() {}
 void gbm_bo_get_format() {}
+void gbm_bo_get_offset() {}
 void gbm_bo_get_device() {}
 void gbm_bo_get_handle() {}
 void gbm_bo_get_fd() {}
+void gbm_bo_get_plane_count() {}
+void gbm_bo_get_handle_for_plane() {}
+void gbm_bo_get_fd_for_plane() {}
 void gbm_bo_write() {}
 void gbm_bo_set_user_data() {}
 void gbm_bo_get_user_data() {}
