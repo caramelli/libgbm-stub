@@ -23,9 +23,12 @@
 void gbm_device_get_fd() {}
 void gbm_device_get_backend_name() {}
 void gbm_device_is_format_supported() {}
+void gbm_device_get_format_modifier_plane_count() {}
 void gbm_device_destroy() {}
 void gbm_create_device() {}
 void gbm_bo_create() {}
+void gbm_bo_create_with_modifiers() {}
+void gbm_bo_create_with_modifiers2() {}
 void gbm_bo_import() {}
 void gbm_bo_map() {}
 void gbm_bo_unmap() {}
@@ -34,10 +37,12 @@ void gbm_bo_get_height() {}
 void gbm_bo_get_stride() {}
 void gbm_bo_get_stride_for_plane() {}
 void gbm_bo_get_format() {}
+void gbm_bo_get_bpp() {}
 void gbm_bo_get_offset() {}
 void gbm_bo_get_device() {}
 void gbm_bo_get_handle() {}
 void gbm_bo_get_fd() {}
+void gbm_bo_get_modifier() {}
 void gbm_bo_get_plane_count() {}
 void gbm_bo_get_handle_for_plane() {}
 void gbm_bo_get_fd_for_plane() {}
@@ -46,6 +51,8 @@ void gbm_bo_set_user_data() {}
 void gbm_bo_get_user_data() {}
 void gbm_bo_destroy() {}
 void gbm_surface_create() {}
+void gbm_surface_create_with_modifiers() {}
+void gbm_surface_create_with_modifiers2() {}
 void gbm_surface_lock_front_buffer() {}
 void gbm_surface_release_buffer() {}
 void gbm_surface_has_free_buffers() {}
