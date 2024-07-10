@@ -1,3 +1,15 @@
+commit bc5468fd43d5aca77db88d0cf4651f29c330934a
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Wed Jul 10 21:43:54 2024 +0200
+
+    Add modifiers for surface/bo creation
+
+commit 1ea3844605d66ea9980e32407ea77b61d06c8364
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Thu May 23 06:36:27 2024 +0200
+
+    Update ChangeLog
+
 commit b1df8590e6ca81a46c158d120f4ec3e6fc40494a
 Author: Nicolas Caramelli <caramelli.devel@gmail.com>
 Date:   Thu May 23 06:36:16 2024 +0200
